@@ -1,0 +1,154 @@
+/***************************
+********* Basic ************
+***************************/
+
+* {
+    font-size: 18px;
+    text-align: center;
+}
+
+body {
+    min-height: 101vh;
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+/***************************
+**** HEADER - SECTION  *****
+***************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.logo {
+    padding: 12px 20px;
+}
+
+.rahmen {
+    border: 1px solid;
+    padding: 5px 5px 10px 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.425);
+}
+
+.title {
+    display: flex;
+    padding: 40px 20px;
+    min-width: 420px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buchstaben {
+    /* padding: 0 10px; */
+    width: 5.2rem;
+}
+
+.rechner {
+    padding-left: 20px
+}
+
+/***************************
+******* MAIN -SECTION*******
+***************************/
+main h1,
+main h2 {
+    width: 600px;
+    margin: 30px auto;
+}
+
+form {
+    width: 300px;
+    margin: 30px auto;
+    /* height: 15rem; */
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    padding: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+label {
+    text-align: left;
+    flex-basis: 5rem;
+    padding: 15px 15px;
+}
+
+input {
+    width: 80px;
+}
+
+button {
+    position: relative;
+    right: 35px;
+    margin-top: 10px;
+    align-self: flex-end;
+    width: 183px;
+}
+
+.output p {
+    padding-bottom: 20px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 496px;
+    height: 301px;
+}
+
+#dasX {
+    left: 55px;
+    bottom: 43px;
+    position: absolute;
+    text-shadow: 0 0 2px white;
+}
+
+img {
+    width: 496px;
+    height: 301px;
+}
+
+
+/***************************
+***** FOOTER - SECTION *****
+***************************/
+
+footer {
+    position: sticky;
+    top: 100vh;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+footer p {
+    text-align: left;
+}
+
+/***************************
+********* Basic ************
+***************************/
