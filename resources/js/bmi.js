@@ -3,7 +3,9 @@ window.onload = function () {
         event.preventDefault();
 
         // 1. Variablen
-        var kg, cm, m, ergebnis, ausgabe, koerperGewicht, kategorie;
+        var kg, cm, m, ergebnis, ausgabeZahl, ausgabeGewicht, ausgabeKategorie, koerperGewicht, kategorie;
+
+
 
 
         // 2. Eingabe/Einlesen
@@ -20,16 +22,28 @@ window.onload = function () {
         kg = commaCheck(kg);
         console.log(kg);
 
-        bmiGrafisch(m, kg);
-
         ergebnis = runden(bmiBerechnung(m, kg), 3);
         console.log(ergebnis);
 
         koerperGewicht = bmiKoerperGewicht(ergebnis);
         console.log(koerperGewicht);
+
         kategorie = bmiKategorie(ergebnis);
         console.log(kategorie);
 
-        ausgabe = document.getElementById('ergebnis').innerHTML = 'Das Ergebnis für deinen BMI lautet: <span>' + ergebnis + '</span>.<br>Laut der Tabelle auf Wikipedia wird dein Körpergewicht eingestuft in ' + koerperGewicht + ' und gehört in die Kategorie: ' + kategorie + '!';
+        // 4. Ausgabe
+
+        bmiGrafisch(m, kg);
+
+        ausgabeZahl = document.getElementById('ergebnisZahl').innerHTML = ergebnis;
+        ausgabeGewicht = document.getElementById('ergebnisGewicht').innerHTML = 'Grob eingeteilt fällst du in die Gruppe: <span>' + koerperGewicht + '</span>,';
+        ausgabeKategorie = document.getElementById('ergebnisKategorie').innerHTML = 'welche wiederum in die Kategorie: <span>' + kategorie + '</span> eingeteilt wird!';
+
+
+
+        // Eingabe wird mit absicht nicht resetet
+        //document.getElementById('cm').value = '';
+        //document.getElementById('kg').value = '';
+
     } // onsubmit
 } //onload

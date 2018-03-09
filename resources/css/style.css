@@ -11,6 +11,7 @@ body {
     min-height: 101vh;
     background-color: aliceblue;
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 h1 {
@@ -45,6 +46,8 @@ header {
     padding: 5px 5px 10px 5px;
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.425);
+    background-color: white;
+    text-shadow: 0 0 2px gray;
 }
 
 .title {
@@ -63,9 +66,82 @@ header {
     padding-left: 20px
 }
 
+@media only screen and (max-width: 1270px) {
+    .rahmen h2 {
+        font-size: 1.2rem;
+    }
+    .rahmen h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        min-width: 290px;
+    }
+    .title h1 {
+        font-size: 2rem;
+    }
+    .title h2 {
+        font-size: 1rem;
+    }
+    .buchstaben {
+        /* padding: 0 10px; */
+        width: 3.2rem;
+    }
+    .rechner {
+        padding-left: 10px
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .rahmen h2 {
+        font-size: 0.8rem;
+    }
+    .rahmen h3 {
+        font-size: 0.8rem;
+    }
+    .title {
+        min-width: 180px;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title h2 {
+        font-size: 0.8rem;
+    }
+    .buchstaben {
+        /* padding: 0 5px; */
+        width: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .zeichen {
+        display: none;
+    }
+    .rechner {
+        display: none;
+    }
+    .title {
+        min-width: 80px;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title h2 {
+        font-size: 0.8rem;
+    }
+    .buchstaben {
+        /* padding: 0 5px; */
+        width: 2.2rem;
+    }
+}
+
 /***************************
 ******* MAIN -SECTION*******
 ***************************/
+
 main h1,
 main h2 {
     width: 600px;
@@ -75,7 +151,6 @@ main h2 {
 form {
     width: 300px;
     margin: 30px auto;
-    /* height: 15rem; */
 }
 
 fieldset {
@@ -111,9 +186,9 @@ button {
 }
 
 .output p {
-    padding: 20px;
+    margin-top: 0;
+    padding: 30px;
     line-height: 1.7rem;
-
 }
 
 .output span {
@@ -127,18 +202,49 @@ button {
     height: 301px;
 }
 
-#dasX {
+.dasX {
     left: 55px;
     bottom: 43px;
     position: absolute;
     text-shadow: 0 0 2px white;
 }
 
-img {
+/* img {
     width: 496px;
     height: 301px;
+} */
+
+.textAusgabe {
+    padding-top: 30px;
 }
 
+.textAusgabe p {
+    padding: 5px
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    main h1,
+    main h2 {
+        width: 100%;
+        max-width: 437px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .container {
+        overflow-x: scroll;
+        overflow-y: visible;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 /***************************
 ***** FOOTER - SECTION *****
@@ -148,11 +254,12 @@ footer {
     position: sticky;
     top: 100vh;
     background-color: antiquewhite;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 footer p {
     text-align: left;
+    padding: 20px;
 }
 
 /***************************

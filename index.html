@@ -16,6 +16,8 @@
 
 
 <body>
+
+    <!-- HEADER - SECTION Start -->
     <header>
         <section class="logo">
             <div class="rahmen">
@@ -23,8 +25,10 @@
                 <h3>JavaScript</h3>
             </div>
         </section>
+
+
+
         <section class="title">
-            <!-- <div class="title_container"> -->
             <div class="buchstaben">
                 <h1>B.</h1>
                 <h2>Body</h2>
@@ -43,9 +47,13 @@
             <div class="rechner">
                 <h1>Rechner</h1>
             </div>
-            <!-- </div> -->
         </section>
     </header>
+    <!-- HEADER - SECTION End -->
+
+
+
+    <!-- MAIN -SECTION Start -->
     <main>
         <section class="input">
             <h1>Herzlich Willkommen beim BMI-Rechner</h1>
@@ -67,21 +75,39 @@
                 </fieldset>
             </form>
         </section>
+
+
+
         <section class="output">
-            <p>Das X Makiert die Stelle und weiter unten findest du die schriftliche Auswertung</p>
+            <p>Das X makiert die Stelle und weiter unten findest du die schriftliche Auswertung</p>
             <div class="container">
                 <div class="dasX" id="dasX">x
                 </div>
                 <img src="./resources/images/bmi_tabelle.gif" alt="">
             </div>
-            <p id=ergebnis></p>
+            <div class="textAusgabe">
+                <p>Dein Ergebnis für den BMI lautet:
+                    <span id="ergebnisZahl"></span>
+                </p>
+                <p>Was sagt Wikipedia?</p>
+                <p id=ergebnisGewicht></p>
+                <p id=ergebnisKategorie></p>
+            </div>
         </section>
     </main>
+    <!-- MAIN - SECTION End -->
+
+
+
+    <!-- FOOTER - SECTION Start -->
     <footer>
         <p>&copy;
             <span id="copyright">2018</span>
         </p>
     </footer>
+    <!-- FOOTER - SECTION End -->
+
+
 </body>
 
 </html>

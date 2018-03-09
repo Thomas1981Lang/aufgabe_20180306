@@ -63,3 +63,5 @@ var runden = function (zahl, stellen) {
     gerundet = Math.round(zahl * faktor) / faktor;
     return gerundet;
 }
+
+
