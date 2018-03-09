@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <script src="./resources/js/bmi.lib.js"></script>
-
+<script src="./resources/js/bmi.js"></script>
 
 
 <body>
@@ -50,18 +50,18 @@
         <section class="input">
             <h1>Herzlich Willkommen beim BMI-Rechner</h1>
             <h2>Wenn du mir dein Gewicht verratest, verrate ich dir deinen Body Mass Index.</h2>
-            <form>
+            <form id="formular">
                 <fieldset>
                     <legend>
                         <h3>Eingabe der Daten</h3>
                     </legend>
                     <div class="box">
                         <label for="">Größe:</label>
-                        <input type="text" name="firstname" placeholder="cm">
+                        <input id="cm" type="text" name="" placeholder="cm">
                     </div>
                     <div class="box">
                         <label for="">Gewicht:</label>
-                        <input type="text" name="lastname" placeholder="kg">
+                        <input id="kg" type="text" name="" placeholder="kg">
                     </div>
                     <button>Ich mag es wissen</button>
                 </fieldset>
@@ -74,6 +74,7 @@
                 </div>
                 <img src="./resources/images/bmi_tabelle.gif" alt="">
             </div>
+            <p id=ergebnis></p>
         </section>
     </main>
     <footer>

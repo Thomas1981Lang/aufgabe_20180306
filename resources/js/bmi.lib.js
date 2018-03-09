@@ -42,12 +42,24 @@ var bmiKoerperGewicht = function (bmi) {
 
 var bmiGrafisch = function (m, kg) {
     var m, kg;
-    m = (((m * 100) - 160 ) * 10) + 55;
-    m = m + "px";
-    console.log(m);
-    kg = ((kg - 40) * 3) + 43;
-    kg = kg + "px";
-    console.log(kg);
-    document.getElementById('dasX').style.left = m;
-    document.getElementById('dasX').style.bottom = kg;
+    if (m < 1.59 || m > 2.01 || kg <= 36 || kg >= 124) {
+        console.log('hier fehlt noch was');
+    } else {
+        m = (((m * 100) - 160) * 10) + 55;
+        m = m + "px";
+        console.log(m);
+        kg = ((kg - 40) * 3) + 43;
+        kg = kg + "px";
+        console.log(kg);
+
+        document.getElementById('dasX').style.left = m;
+        document.getElementById('dasX').style.bottom = kg;
+    }
+}
+
+var runden = function (zahl, stellen) {
+    var gerundet, faktor;
+    faktor = Math.pow(10, stellen);
+    gerundet = Math.round(zahl * faktor) / faktor;
+    return gerundet;
 }
