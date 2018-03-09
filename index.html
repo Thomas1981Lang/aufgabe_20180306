@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
+
 <script src="./resources/js/bmi.lib.js"></script>
 <script src="./resources/js/bmi.js"></script>
-
 
 <body>
 
@@ -55,47 +55,55 @@
 
     <!-- MAIN -SECTION Start -->
     <main>
-        <section class="input">
-            <h1>Herzlich Willkommen beim BMI-Rechner</h1>
-            <h2>Wenn du mir dein Gewicht verratest, verrate ich dir deinen Body Mass Index.</h2>
-            <form id="formular">
-                <fieldset>
-                    <legend>
-                        <h3>Eingabe der Daten</h3>
-                    </legend>
-                    <div class="box">
-                        <label for="">Größe:</label>
-                        <input id="cm" type="text" name="" placeholder="cm">
+        <div class="part1">
+            <section class="input">
+                <h1>Herzlich Willkommen beim BMI-Rechner</h1>
+                <h2>Wenn du mir dein Gewicht verratest, verrate ich dir deinen Body Mass Index.</h2>
+                <form id="formular">
+                    <fieldset>
+                        <legend>
+                            <h3>Eingabe der Daten</h3>
+                        </legend>
+                        <div class="box">
+                            <label for="">Größe:</label>
+                            <input id="cm" type="text" name="" placeholder="cm">
+                        </div>
+                        <div class="box">
+                            <label for="">Gewicht:</label>
+                            <input id="kg" type="text" name="" placeholder="kg">
+                        </div>
+                        <button>Ich mag es wissen</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="meldungen">
+                <p id="grafik"></p>
+            </section>
+        </div>
+
+
+
+        <div class="part2">
+            <section class="output">
+
+                <div class="container">
+                    <div class="dasX" id="dasX">x
                     </div>
-                    <div class="box">
-                        <label for="">Gewicht:</label>
-                        <input id="kg" type="text" name="" placeholder="kg">
-                    </div>
-                    <button>Ich mag es wissen</button>
-                </fieldset>
-            </form>
-        </section>
-
-        <section class="meldungen">
-            <p id="grafik"></p>
-        </section>
-
-        <section class="output">
-
-            <div class="container">
-                <div class="dasX" id="dasX">x
+                    <img src="./resources/images/bmi_tabelle.gif" alt="">
                 </div>
-                <img src="./resources/images/bmi_tabelle.gif" alt="">
-            </div>
-            <div class="textAusgabe">
-                <p>Dein Ergebnis für den BMI lautet:
-                    <span id="ergebnisZahl"></span>
-                </p>
-                <p>Was sagt Wikipedia?</p>
-                <p id=ergebnisGewicht></p>
-                <p id=ergebnisKategorie></p>
-            </div>
-        </section>
+
+                <div class="textAusgabe">
+                    <p>Dein Ergebnis für den BMI lautet:
+                        <span id="ergebnisZahl"></span>
+                    </p>
+                    <p>Was sagt Wikipedia?</p>
+                    <p id=ergebnisGewicht></p>
+                    <p id=ergebnisKategorie></p>
+                </div>
+
+            </section>
+        </div>
     </main>
     <!-- MAIN - SECTION End -->
 
@@ -104,12 +112,11 @@
     <!-- FOOTER - SECTION Start -->
     <footer>
         <p>&copy;
-            <span id="copyright">2018</span>
+            <span id="copyright">2018 TL</span>
         </p>
     </footer>
     <!-- FOOTER - SECTION End -->
 
 
 </body>
-
 </html>
