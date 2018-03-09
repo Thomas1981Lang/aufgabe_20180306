@@ -45,10 +45,10 @@ window.onload = function () {
             bmiGrafisch(m, kg);
 
             ausgabeZahl = document.getElementById('ergebnisZahl').innerHTML = ergebnis;
-            ausgabeGewicht = document.getElementById('ergebnisGewicht').innerHTML = 'Grob eingeteilt fällst du in die Gruppe: <span>' + koerperGewicht + '</span>,';
-            ausgabeKategorie = document.getElementById('ergebnisKategorie').innerHTML = 'welche wiederum in die Kategorie: <span>' + kategorie + '</span> eingeteilt wird!';
+            ausgabeGewicht = document.getElementById('ergebnisGewicht').innerHTML = 'Du fällst in die Gruppe: <span>' + koerperGewicht + '</span>,';
+            ausgabeKategorie = document.getElementById('ergebnisKategorie').innerHTML = 'in die Kategorie: <span>' + kategorie + '</span>.';
         } else {
-            document.getElementById('grafik').innerHTML = 'Leider stimmt etwas nicht mit den eingegebenen Werten.<br>Bitte kontrolliere noch mal deine Eingaben.';
+            document.getElementById('grafik').innerHTML = 'Leider stimmt etwas nicht mit den eingegebenen Werten.<br>Bitte kontrolliere nochmal deine Eingaben.';
             document.getElementById('dasX').classList.remove('dasXdada');
         }
 
